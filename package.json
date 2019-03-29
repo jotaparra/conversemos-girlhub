@@ -1,0 +1,11 @@
+{
+  "name": "conversemos",
+  "version": "1.0.0",
+  "description": "Proyecto Hackaton Feminista",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "girlhub",
+  "license": "ISC"
+}
