@@ -234,21 +234,21 @@ function pathToFollow(text){
         <div class="container spacing">
             <div class="row">
                 <div class="col-12">
-                    <button id="optnBtnOne" class="customBtn">Pololeo</button>
+                    <button id="optnRelOne" class="customBtn">Pololeo</button>
                 </div>
             </div>
         </div>
         <div class="container spacing">
             <div class="row">
                 <div class="col-12">
-                    <button id="optnBtnTwo" class="customBtn">Convivencia</button>
+                    <button id="optnRelTwo" class="customBtn">Convivencia</button>
                 </div>
             </div>
         </div>
         <div class="container spacing">
             <div class="row">
                 <div class="col-12">
-                    <button id="optnBtnThree" class="customBtn">Matrimonio</button>
+                    <button id="optnRelThree" class="customBtn">Matrimonio</button>
                 </div>
             </div>
         </div>
@@ -258,5 +258,64 @@ function pathToFollow(text){
         root.appendChild(sxthResMsg);
         root.appendChild(relOptions);
         convSection.scrollIntoView(false);
+        chosenRelOptn();
     }
+}
+
+function chosenRelOptn(){
+
+    optnRelOne.addEventListener("click", () => {
+
+        relOptions.style.display = "none";
+
+        const chosenOptn = document.createElement("div")
+        chosenOptn.classList.add("col-11", "sideText", "spacing", "pushLeft")
+        chosenOptn.innerHTML = `
+        <div class="sideText pushLeft spacing maxContent">
+            <p class="box3 sb13">${optnRelOne.textContent}</p>
+            <img class="contain" src="./img/girlUser.png" alt="UserLogo">
+        </div>
+        `;
+        root.appendChild(chosenOptn);
+        convSection.scrollIntoView(false);
+        setTimeout(function(){ firstOption();}, 1000);
+    })
+}
+
+function firstOption(){
+
+    const svnthResMsg = document.createElement("div")
+    svnthResMsg.classList.add("col-11", "sideText")
+    svnthResMsg.innerHTML = `
+    <div class="sideText spacing maxContent">
+        <img class="contain" src="./img/girlAI.png" alt="AILogo">
+        <p class="box3 sb14">Entiendo. Ahora voy a hacerte un par de preguntas 
+        para ayudarte a analizar tu relación.</p>
+    </div>
+    `;
+
+    const start = document.createElement("div");
+    start.id = "start";
+    start.classList.add("middle", "col-11", "spacing");
+    start.innerHTML = `
+    <div class="container spacing">
+        <div class="row">
+            <div class="col-12">
+                <button id="optnBtnOne" class="customBtn">Comencemos</button>
+            </div>
+        </div>
+    </div>`
+
+    root.appendChild(svnthResMsg);
+    root.appendChild(start);
+    convSection.scrollIntoView(false);
+    setTimeout(function(){ startTest();}, 1000);
+};
+
+function startTest(){
+
+    start.addEventListener("click", () => {
+        convSection.style.display = "none";
+        option1.style.display = "block";
+    })
 }
