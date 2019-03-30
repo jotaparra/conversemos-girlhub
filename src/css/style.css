@@ -169,9 +169,9 @@
 }
 
 /* estilos section index */
-#index{
-    display: none;
-}
+/* #index{
+    
+} */
 
 .background-body{
     position: absolute;
@@ -186,17 +186,22 @@
 }
 
 .row-index {
-    height: 50%; 
+    height: 100vh; 
 }
 
 .img-responsive{  /* gracias a esto se centra la imagen del logo */
   margin: 0 auto;
   display: flex; 
 }
-
+.logotipo {
+    width: 400px;
+}
 
 
 /* estilos sección pin */
+#pin{
+    display: none;
+}
 .btn-circle {
     width: 80px;
     height: 80px;  
