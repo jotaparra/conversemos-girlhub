@@ -1,9 +1,5 @@
 window.onload = () =>{
     setTimeout(function(){ indexPage();}, 4000);
-
-    /* document.getElementById('btn-access').addEventListener('click', ()=>{
-        
-    }) */
 };
 
 let userName;
@@ -72,3 +68,5 @@ function firstResponse(){
     root.appendChild(scndResMsg);
     root.appendChild(optnBtns);
 };
+
+
