@@ -3,6 +3,7 @@ window.onload = () =>{
 };
 
 let userName;
+let pointsCount = [0];
 
 function indexPage(){
 
@@ -309,13 +310,67 @@ function firstOption(){
     root.appendChild(svnthResMsg);
     root.appendChild(start);
     convSection.scrollIntoView(false);
-    setTimeout(function(){ startTest();}, 1000);
+    setTimeout(function(){ startTest(0);}, 1000);
 };
 
-function startTest(){
-
+function startTest(indexNum){
     start.addEventListener("click", () => {
         convSection.style.display = "none";
         option1.style.display = "block";
+        rootQuestions.innerHTML = relQuestions[indexNum];
+        btnOptns.innerHTML = "";
+        btnOptns.innerHTML = `
+        <div class="col-12 ml-3">
+            <button type="button" class="btn btn-question ml-5" id="never${indexNum}">Nunca</button>
+            <button type="button" class="btn btn-question ml-5" id="once${indexNum}">Una vez</button>
+            <button type="button" class="btn btn-question ml-5" id="sometimes${indexNum}">A veces</button>
+            <button type="button" class="btn btn-question ml-5" id="always${indexNum}">Siempre</button>
+        </div>
+        `
+        counter(indexNum);
+    })
+}
+
+function counter(indexNum) {
+    
+    const never = document.getElementById("never" + indexNum);
+    const once = document.getElementById("once" + indexNum);
+    const sometimes = document.getElementById("sometimes" + indexNum);
+    const always = document.getElementById("always" + indexNum);
+
+    never.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 0;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
+    })
+
+    once.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 1;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
+    })
+
+    sometimes.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 2;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
+    })
+
+    always.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 3;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
     })
 }
