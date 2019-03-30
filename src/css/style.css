@@ -3,3 +3,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+.nav-gradient{
+    background: linear-gradient(180deg, #D2DAF2 44.99%, #EDE0F1 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
