@@ -1,9 +1,15 @@
-body{
+/* estilos de la conversación con chatbot */
+#talking{
+    position: absolute;
+	width:100%;
+	height:100%;
     background: url(../img/background-complete.jpg) no-repeat top;
     background-size: cover;
     background-attachment: fixed;
+    display: none;
 }
 
+/* estilos del menú de navegación dentro de #talking */
 .nav-gradient{
     background: linear-gradient(180deg, #D2DAF2 44.99%, #EDE0F1 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -24,3 +30,27 @@ body{
   border-left: 1px solid white;
   color: inherit;
 }
+
+/* estilos section index */
+#index{
+    position: absolute;
+	width:100%;
+	height:100%;
+    background: url(../img/index_background_small.jpeg);
+}
+
+.row-index {
+    height: 50%; 
+}
+
+.img-responsive{  /* gracias a esto se centra la imagen del logo */
+  margin: 0 auto;
+  display: flex; 
+}
+
+
+
+/* #sectionNav{
+
+} */
+

@@ -14,50 +14,63 @@
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light nav-gradient">
-        <div class="container">
-            <!-- para centrar el contenido del menú -->
-            <a href="#" class="navbar-brand">Menú</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#navbar' aria-controls="navbar"
-                aria-expanded="false" aria-label="Menu de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Acerca de</a>
-                    </li>
-                </ul>
+    <!-- sección para pantalla inicial -->
+    <section id="index" class="container-fluid">
+        <div class="row row-index">
+            <div class="col align-self-center">
+                <img src="./img/logotipo.jpeg" class="img-responsive" alt="logo conversemos">
             </div>
         </div>
-    </nav>
-    <!--/.Navbar-->
-    <!-- clase container después del navbar -->
-<main>
-   
-</main>
-
-
-
-
-
-    <!-- footer -->
-    <footer class="footer fixed-bottom pink">
-            <div class="container">
-                    <form class="row align-items-center justify-content-center">
-                            <div class="col-10">
-                              <input type="text" class="form-control my-3 input-message" id="" aria-describedby="text" placeholder="Escribe tu mensaje">
-                            </div>
-                            <div class="col-2">
-                                <button class="btn-message"><img src="./img/send-button.png" alt="botón para enviar mensaje" srcset=""></button> 
-                            </div>
-                    </form>
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" id="btn-access">Conversemos</button>
             </div>
-    </footer>
+        </div>
+    </section>
+
+    <!-- sección conversar con chatbot -->
+    <section id="talking">
+        <!--Navbar-->
+        <nav id="sectionNav" class="navbar navbar-expand-lg fixed-top navbar-light nav-gradient">
+            <div class="container">
+                <!-- para centrar el contenido del menú -->
+                <a href="#" class="navbar-brand">Menú</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#navbar' aria-controls="navbar"
+                    aria-expanded="false" aria-label="Menu de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/.Navbar-->
+        <!-- footer -->
+        <footer class="footer fixed-bottom pink">
+            <div class="container">
+                <form class="row align-items-center justify-content-center">
+                    <div class="col-10">
+                        <input type="text" class="form-control my-3 input-message" id="" aria-describedby="text"
+                            placeholder="Escribe tu mensaje">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn-message"><img src="./img/send-button.png" alt="botón para enviar mensaje"
+                                srcset=""></button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </section>
+
+
+
 
 
     <!-- Optional JavaScript -->
