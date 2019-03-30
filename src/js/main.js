@@ -57,10 +57,10 @@ function firstResponse(){
     const optnBtns = document.createElement("div");
     optnBtns.classList.add("col-11", "sideText");
     optnBtns.innerHTML = `
-        <div class="col-6">
+        <div class="col-6 col-md-3">
             <button class="customBtn">Si</button>
         </div>
-        <div class="col-6">
+        <div class="col-6 col-md-3">
             <button class="customBtn">No</button>
         </div>
     `
@@ -68,5 +68,3 @@ function firstResponse(){
     root.appendChild(scndResMsg);
     root.appendChild(optnBtns);
 };
-
-
