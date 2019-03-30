@@ -1,13 +1,10 @@
-window.onload = () =>{
+/* window.onload = () =>{
     document.getElementById('btn-access').addEventListener('click', ()=>{
         document.getElementById('index').style.display='none';
-        document.getElementById('talking').style.display='block';
+        document.getElementById('talking').style.display='none';
 
-    })
-
-    /* document.getElementById('btn-access').addEventListener('click', ()=>{
-        
     }) */
+
 
 
 
