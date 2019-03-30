@@ -3,6 +3,7 @@ window.onload = () =>{
 };
 
 let userName;
+let pointsCount = [0];
 
 function indexPage(){
 
@@ -234,21 +235,21 @@ function pathToFollow(text){
         <div class="container spacing">
             <div class="row">
                 <div class="col-12">
-                    <button id="optnBtnOne" class="customBtn">Pololeo</button>
+                    <button id="optnRelOne" class="customBtn">Pololeo</button>
                 </div>
             </div>
         </div>
         <div class="container spacing">
             <div class="row">
                 <div class="col-12">
-                    <button id="optnBtnTwo" class="customBtn">Convivencia</button>
+                    <button id="optnRelTwo" class="customBtn">Convivencia</button>
                 </div>
             </div>
         </div>
         <div class="container spacing">
             <div class="row">
                 <div class="col-12">
-                    <button id="optnBtnThree" class="customBtn">Matrimonio</button>
+                    <button id="optnRelThree" class="customBtn">Matrimonio</button>
                 </div>
             </div>
         </div>
@@ -258,5 +259,118 @@ function pathToFollow(text){
         root.appendChild(sxthResMsg);
         root.appendChild(relOptions);
         convSection.scrollIntoView(false);
+        chosenRelOptn();
     }
+}
+
+function chosenRelOptn(){
+
+    optnRelOne.addEventListener("click", () => {
+
+        relOptions.style.display = "none";
+
+        const chosenOptn = document.createElement("div")
+        chosenOptn.classList.add("col-11", "sideText", "spacing", "pushLeft")
+        chosenOptn.innerHTML = `
+        <div class="sideText pushLeft spacing maxContent">
+            <p class="box3 sb13">${optnRelOne.textContent}</p>
+            <img class="contain" src="./img/girlUser.png" alt="UserLogo">
+        </div>
+        `;
+        root.appendChild(chosenOptn);
+        convSection.scrollIntoView(false);
+        setTimeout(function(){ firstOption();}, 1000);
+    })
+}
+
+function firstOption(){
+
+    const svnthResMsg = document.createElement("div")
+    svnthResMsg.classList.add("col-11", "sideText")
+    svnthResMsg.innerHTML = `
+    <div class="sideText spacing maxContent">
+        <img class="contain" src="./img/girlAI.png" alt="AILogo">
+        <p class="box3 sb14">Entiendo. Ahora voy a hacerte un par de preguntas 
+        para ayudarte a analizar tu relación.</p>
+    </div>
+    `;
+
+    const start = document.createElement("div");
+    start.id = "start";
+    start.classList.add("middle", "col-11", "spacing");
+    start.innerHTML = `
+    <div class="container spacing">
+        <div class="row">
+            <div class="col-12">
+                <button id="optnBtnOne" class="customBtn">Comencemos</button>
+            </div>
+        </div>
+    </div>`
+
+    root.appendChild(svnthResMsg);
+    root.appendChild(start);
+    convSection.scrollIntoView(false);
+    setTimeout(function(){ startTest(0);}, 1000);
+};
+
+function startTest(indexNum){
+    start.addEventListener("click", () => {
+        convSection.style.display = "none";
+        option1.style.display = "block";
+        rootQuestions.innerHTML = relQuestions[indexNum];
+        btnOptns.innerHTML = "";
+        btnOptns.innerHTML = `
+        <div class="col-12 ml-3">
+            <button type="button" class="btn btn-question ml-5" id="never${indexNum}">Nunca</button>
+            <button type="button" class="btn btn-question ml-5" id="once${indexNum}">Una vez</button>
+            <button type="button" class="btn btn-question ml-5" id="sometimes${indexNum}">A veces</button>
+            <button type="button" class="btn btn-question ml-5" id="always${indexNum}">Siempre</button>
+        </div>
+        `
+        counter(indexNum);
+    })
+}
+
+function counter(indexNum) {
+    
+    const never = document.getElementById("never" + indexNum);
+    const once = document.getElementById("once" + indexNum);
+    const sometimes = document.getElementById("sometimes" + indexNum);
+    const always = document.getElementById("always" + indexNum);
+
+    never.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 0;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
+    })
+
+    once.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 1;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
+    })
+
+    sometimes.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 2;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
+    })
+
+    always.addEventListener("click", () => {
+        pointsCount.reduce((acc) => {
+            return acc + 3;
+        })
+        indexNum =+ 1
+        startTest(indexNum);
+        start.click();
+    })
 }

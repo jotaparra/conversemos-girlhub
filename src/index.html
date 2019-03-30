@@ -10,11 +10,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>conversemos</title>
@@ -25,7 +25,7 @@
 
     <section id="index" class="background-body container-fluid text-blur-out">
         <div class="row row-index">
-            <div class="col align-self-center">
+            <div class="col-12 align-self-center">
                 <img src="./img/logotipo.png" class="img-responsive logotipo" alt="logo conversemos">
             </div>
         </div>
@@ -64,7 +64,8 @@
                     </button>
                 </div>
                 <div class="col-auto">
-                    <button id="confPin" type="button" class="btn btn-default btn-circle">5<span class="letter">JKL</span></i>
+                    <button id="confPin" type="button" class="btn btn-default btn-circle">5<span
+                            class="letter">JKL</span></i>
                     </button>
                 </div>
                 <div class="col-auto">
@@ -93,12 +94,12 @@
                 </div>
             </div>
             <div class="row btn-pin text-center mt-5">
-                    <div class="col"><a href="#">Omitir</a>
-                        
-                    </div>
-                    <div class="col">
-                            <a href="#">Aceptar</a>
-                    </div>
+                <div class="col"><a href="#">Omitir</a>
+
+                </div>
+                <div class="col">
+                    <a href="#">Aceptar</a>
+                </div>
             </div>
         </div>
 
@@ -145,8 +146,8 @@
                 <div class="container">
                     <form class="row align-items-center justify-content-center" autocomplete="off">
                         <div class="col-10">
-                            <input type="text" class="form-control my-3 input-message" id="userMsg" aria-describedby="text"
-                                placeholder="Escribe tu mensaje">
+                            <input type="text" class="form-control my-3 input-message" id="userMsg"
+                                aria-describedby="text" placeholder="Escribe tu mensaje">
                         </div>
                         <div class="col-2">
                             <button id="sendBtn" class="btn-message"><img src="./img/send-button.png"
@@ -158,24 +159,17 @@
         </section>
     </section>
 
-<!-- seccion quiero analizar mi relación -->
-<section id="option1" class="background-body container-fluid">
+    <!-- seccion quiero analizar mi relación -->
+    <section id="option1" class="background-body container-fluid">
         <div id="questions" class="row row-option1 align-items-center">
-            <div class="col text-center">
+            <div class="col-12 text-center">
                 <h4 id="rootQuestions">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, nostrum quasi. Eum.
                 </h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 ml-3">
-                <button type="button" class="btn btn-question ml-5" id="">Nunca</button>
-                <button type="button" class="btn btn-question ml-5" id="">Una vez</button>
-                <button type="button" class="btn btn-question ml-5" id="">A veces</button>
-                <button type="button" class="btn btn-question ml-5" id="">Siempre</button>
-            </div>
+        <div id="btnOptns" class="row">
         </div>
-</section> 
+    </section>
 
 
     <!-- Optional JavaScript -->
@@ -190,6 +184,7 @@
         crossorigin="anonymous"></script>
     <!-- JavaScript -->
     <script src="./js/main.js"></script>
+    <script src="./js/js.js"></script>
 </body>
 
 </html>

@@ -188,7 +188,7 @@
 
 .background-body{
     position: absolute;
-	  width:100%;
+	  width: auto;
     background: url(../img/index_background_small.jpeg);
     background-position: center center;
     background-attachment: fixed;
@@ -207,7 +207,7 @@
   display: flex; 
 }
 .logotipo {
-    width: 400px;
+    width: inherit;
 }
 
 
@@ -248,16 +248,21 @@ a:hover {
 }
 
 /* estilos de opcion 1 - quiero analizar mi relación */
+
+#option1{
+  display: none;
+}
+
 .row-option1{
     min-height: 40vh;
 }
 
 .btn-question{
-background: #FCFAFB;
-border: 1px solid rgba(211, 93, 221, 0.8);
-box-sizing: border-box;
-border-radius: 20px;
-width:216px;
-height: 50px;
-margin-top: 30px;
+  background: #FCFAFB;
+  border: 1px solid rgba(211, 93, 221, 0.8);
+  box-sizing: border-box;
+  border-radius: 20px;
+  width:216px;
+  height: 50px;
+  margin-top: 30px;
 }
