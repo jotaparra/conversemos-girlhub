@@ -38,12 +38,16 @@
 /* estilos de la conversación con chatbot */
 #talking{
     position: absolute;
-	width:100%;
+	  width:100%;
     min-height: 100vh;
     background: url(../img/background-complete.jpg) no-repeat top;
     background-size: cover;
     background-attachment: fixed;
     display: none;
+}
+
+#convSection{
+  padding-bottom: 80px;
 }
 
 #conversation{
@@ -77,11 +81,20 @@
     height: 60px;
 }
 
+.fixedHeightFooter{
+  height: 80px;
+}
+
+.middle{
+  margin: 0 auto;
+}
+
 /* estilo botones de opciones dentro de chat */
 
 .customBtn{
-    background: linear-gradient(180deg, #DD86E3 -98.33%, #FFEDFB 241.67%);
-    border-color: #DD86E3;
+    background: #FCFAFB;
+    border: 1px solid rgba(211, 93, 221, 0.8);
+    box-sizing: border-box;
     border-radius: 13px;
     width: inherit;
 }
@@ -170,7 +183,7 @@
 
 /* estilos section index */
 #index{
-    display: none;
+    display: block;
 }
 
 .background-body{
@@ -197,6 +210,9 @@
 
 
 /* estilos sección pin */
+#pin{
+  display: none;
+}
 .btn-circle {
     width: 80px;
     height: 80px;  
