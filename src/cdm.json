@@ -1,0 +1,245 @@
+{
+    "region":[{
+        "id": "Arica y Parinacota",
+        "1": [{
+        "Nombre": "Servicio de Salud Arica",
+        "Ejecutor": "Servicio de Salud Arica",
+        "Cobertura_Territorial": "Arica",
+        "Dirección": "Yugoslavia 1253",
+        "Telefono": "58-2254296",
+        "Email":"centrodelamujer.arica@gmail.com"
+    }]
+    }, {
+        "id":"Tarapacá",
+        "1": [{
+        "Nombre": "Centro de la  mujer de Iquique",
+        "Ejecutor": "YMCA",
+        "Cobertura_Territorial": "Iquique",
+        "Dirección": "Juan Antonio Rios 2899, Iquique",
+        "Telefono": "57-2211102",
+        "Email":"centrodelamujeriquique@gmail.com"
+    }], "2":[{
+        "Nombre":"Centro de la mujer de  Alto Hospicio",
+        "Ejecutor": "Municipalidad de Alto Hospicio",
+        "Cobertura_Territorial": "Alto Hospicio",
+        "Dirección": "Los cóndores 3741",
+        "Telefono": "57-24930543",
+        "Email":"centrodelamujeraho@gmail.com"
+    }]
+    }, {
+        "id": "Antofagasta",
+        "1":[{
+        "Nombre": "Centro de la mujer de Antofagasta",
+        "Ejecutor": "Gobernación provincial de Antofagasta",
+        "Cobertura_Territorial": "Antofagasta, Taltal, Mejillones y Sierra Gorda",
+        "Dirección": "San Martin 2298,Antofagasta",
+        "Telefono": "55-2773879",
+        "Email":"centrodelamujerantofagasta@gmail.com"
+    }], "2":[{
+        "Nombre": "Centro de la mujer de Calama",
+        "Ejecutor": "Municipalidad de Calama",
+        "Cobertura_Territorial": "Calama, San Pedro de Atacama, Ollagüe",
+        "Dirección": "Avenida Central Norte 2012",
+        "Telefono": "55-2892615",
+        "Email":"centrodelamujercalama@gmail.com"
+        }]
+    },{
+        "id": "Atacama",
+        "1":[{
+        "Nombre": "Centro de la mujer de Copiapó",
+        "Ejecutor": "Municipalidad de Copiapó",
+        "Cobertura_Territorial": "Copiapó,Tierra Amarilla y Caldera",
+        "Dirección": "Valentín Letelier 731, Población los Sauces, Copiapó",
+        "Telefono": "52-2219814",
+        "Email":"cmujer@gmail.com"
+    }], "2":[{
+        "Nombre": "Centro de la mujer de Vallenar",
+        "Ejecutor": "Municipalidad de Vallenar",
+        "Cobertura_Territorial": "Vallenar, Freirina y Huasco",
+        "Dirección": "Merced 1455, 2° piso",
+        "Telefono": "51-2-672170",
+        "Email":"mujerhuasco@gmail.com"
+    }]
+    },{
+        "id": "Coquimbo",
+        "1":[{
+        "Nombre": "Centro de la mujer de La Serena",
+        "Ejecutor": "Municipalidad de La Serena",
+        "Cobertura_Territorial": "La Serena, Vicuña, Paihuano",
+        "Dirección": "Infante 560, La Serena",
+        "Telefono": "51-264 18450",
+        "Email":"centroliwen@gmail.com"
+    }], "2":[{
+        "Nombre": "Centro de la mujer de Illapel",
+        "Ejecutor": "Municipalidad de Illapel",
+        "Cobertura_Territorial": "Illapel,Salamanca,Canela,Los Vilos",
+        "Dirección": "Villa Riego 1, Illapel",
+        "Telefono": "53-2521531",
+        "Email":"centromujermakallay@gmail.com"
+    }], "3":[{
+        "Nombre": "Centro de la mujer de Ovalle",
+        "Ejecutor": "Municipalidad de Ovalle",
+        "Cobertura_Territorial": "Ovalle, Monte Patria, Combarbalá",
+        "Dirección": "Carmen 157",
+        "Telefono": "53-262 1542",
+        "Email":"centrodelamujerovalle@outlook.com"
+
+    }]
+    },{
+        "id":"Valparaíso",
+        "1":[{
+        "Nombre": "Centro de la Mujer de Valparaíso",
+        "Ejecutor": "Municipalidad de Valparaíso",
+        "Cobertura_Territorial": "Valparaíso, Casablanca",
+        "Dirección":"Av. Argentina Nº 864, piso 2 Of 19, Valaparaíso",
+        "Teléfono": "32 – 293 9316",
+        "Email": "centrodelamujerdevalparaiso@munivalpo.cl"
+    }], "2":[{
+        "Nombre": "Centro de la Mujer San Felipe",
+        "Ejecutor": "Servicio de Salud Aconcagua",
+        "Cobertura_Territorial": "San Felipe, Putaendo, Santa María, Panquehue.",
+        "Dirección": "Traslaviña 1242, San Felipe",
+        "Teléfono": "34 – 250 9076",
+        "Email": "centrovifaconcagua@gmail.com"
+    }], "3":[{
+        "Nombre": "Centro de la Mujer Los Andes",
+        "Ejecutor": "Gobernación Provincial de Los Andes",
+        "Cobertura_Territorial": "Los Andes, San Esteban, Calle Larga, Rinconada",
+        "Dirección": "Esmeralda  387, Los Andes",
+        "Teléfono": "34 – 229 5221",
+        "Email": "centrodelamujer.goblosandes@gmail.com"
+
+    }]
+    },{
+        "id":"Metropolitana",
+        "1":[{
+        "Nombre": "Centro de la Mujer Provincia Melipilla",
+        "Ejecutor": "Municipalidad de Melipilla",
+        "Cobertura_Territorial": "Melipilla, María Pinto, San Pedro",
+        "Dirección": "Ortúzar 325, Melipilla",
+        "Teléfono": "2 29027372 / 2 29027382",
+        "Email": "centrodelamujermelipilla@gmail.com"
+    }], "2":[{
+    "Nombre": "Centro de la Mujer Peñalolén",
+    "Ejecutor": "Municipalidad de Peñalolen",
+    "Cobertura_Territorial": "Peñalolén",
+    "Dirección": "Calle 17-A  931, Villa Naciones Unidas, Peñalolén",
+    "Teléfono": "2 22 791 761 / 2 22 793 009",
+    "Email": "centromujer@penalolen.cl"
+    }],  "3":[{
+    "Nombre": "Centro de la Mujer San Bernardo",
+    "Ejecutor": "Municipalidad de San Bernardo",
+    "Cobertura_Territorial": "San Bernardo, Buin, Paine",
+    "Dirección": "Av. O’Higgins 375, San Bernardo",
+    "Teléfono": "2 29 270 962 / 2 29270070",
+    "Email": "centrodelamujersanbernardo@gmail.com"
+    }],   "4":[{
+    "Nombre": "Centro de la Mujer Maipú",
+    "Ejecutor": "Municipalidad de Maipú",
+    "Cobertura_Territorial": "Maipú",
+    "Dirección": "General Ordoñez 176 – Depto. 405 -406 Maipú",
+    "Teléfono": "2 – 2677 6741; 2 – 2677 6742",
+    "Email": "vifponiente@maipu.cl"
+    }],   "5":[{
+        "Nombre": "Centro de la Mujer Conchalí",
+        "Ejecutor": "Municipalidad de Conchalí",
+        "Cobertura_Territorial": "Conchalí, Huechuraba",
+        "Dirección": "La Palma 3595, Conchalí",
+        "Teléfono": "2 29 045 682 / 2 29045681",
+        "Email": "centromujerzonanorte@gmail.com"
+    }], "6":[{
+        "Nombre": "Centro de la Mujer La Pintana",
+        "Ejecutor": "Municipalidad de La Pintana",
+        "Cobertura_Territorial": "La Pintana",
+        "Dirección": "Av. José Manuel Balmaceda N° 1231, La Pintana",
+        "Teléfono": "2 23 896 822 / 2 23 896 815 / 2 23 896 824",
+        "Email": "lapintanacentrodelamujer@gmail.com"
+    
+    }]    
+    },{
+        "id":"O'Higgins",
+        "1":[{
+        "Nombre": "Centro de la Mujer de Colchagua (San Fernando)",
+        "Ejecutor": "Fundación Leon Bloy",
+        "Cobertura_Territorial": "San Fernando, Chimbarongo, Santa Cruz",
+        "Dirección": "Chillán 947, San Fernando",
+        "Teléfono": "72 – 271 2081",
+        "Email": "centrodelamujercolchagua@gmail.com"
+    }], "2":[{  
+        "Nombre": "Centro de la Mujer de Rancagua",
+        "Ejecutor": "Ilustre Municipalidad de Rancagua",
+        "Cobertura_Territorial": "Rancagua, Graneros, Machalí",
+        "Dirección": "Calle Lourdes Nº 463, Rancagua",
+        "Teléfono": "72 – 223 9927; 72 – 222 7585",
+        "Email": "centrodelamujerrancagua@gmail.com; centrodelamujer@rancagua.cl"
+
+    }]
+    },{
+        "id": "Maule",
+        "1":[{
+        "Nombre": "Centro de la Mujer de San Javier",
+        "Ejecutor": "Municipalidad de San Javier",
+        "Cobertura_Territorial": "San Javier, Villa Alegre, Linares",
+        "Dirección": "Calle Esmeralda 987, San Javier",
+        "Teléfono": "73 – 232 4063",
+        "Email": "centrodelamujer.imsanjavier@gmail.com"
+    }], "2":[{
+        "Nombre": "Centro de la Mujer de Curicó",
+        "Ejecutor": "Gobernación Provincial de Curicó",
+        "Cobertura_Territorial": "Curicó, Rauco, Romeral, Teno",
+        "Dirección": "Población Santa Inés, pasaje E # 34, Curicó",
+        "Teléfono": "75 – 227962; +569 7578 0731",
+        "Email": "centrovifcurico@gmail.com"
+    
+    }]
+    },{
+        "id":"Ñuble",
+        "1":[{
+        "Nombre": "Centro de la Mujer de San Carlos",
+        "Ejecutor": "Municipalidad de San Carlos",
+        "Cobertura_Territorial": "San Carlos, San Nicolás, Niquen, Ninhue",
+        "Dirección": "Serrano Nº261, San Carlos",
+        "Teléfono": "42 – 241 2203",
+        "Email": "centrovifsancarlos@gmail.com"
+            
+
+        }]
+    },{
+
+    "id":"Aysen",
+    "1":[{
+    "Nombre": "Centro de la Mujer de Coyhaique",
+    "Ejecutor": "Municipalidad de Coyhaique",
+    "Cobertura_Territorial": "Coyhaique, Cochrane y Chile Chico",
+    "Dirección": "Psj. Aca Austral Esquina Empalme Aeródromo, Coyhaique",
+    "Teléfono": "67 – 221 3178; 67 – 221 3176",
+    "Email": "centrorayen@gmail.com"
+}], "2":[{
+    "Nombre": "Centro de la Mujer Puerto Aysén",
+    "Ejecutor": "Municipalidad de Aysén",
+    "Cobertura_Territorial": "Puerto Aysén, Puerto Cisnes y Melinka",
+    "Dirección": "Teniente Merino 520, Puerto Aysén",
+    "Teléfono": "67 – 233 4855; 67 – 233 1804",
+    "Email": "centrodelamujer@puertoaysen.cl"
+}]
+    },{
+
+    "id":"Magallanes y Antártica Chilena",
+    "1":[{
+    "Nombre": "Centro de la Mujer de Punta Arenas",
+    "Ejecutor": "Fundación para el Desarrollo de Magallanes Fide XII",
+    "Cobertura_Territorial": "Punta Arenas",
+    "Dirección": "José Menéndez N°640, Punta Arenas",
+    "Teléfono": "61 – 224 4016",
+    "Email": "centrodelamujerpuntaarenas@fidexii.cl"
+}], "2":[{
+    "Nombre": "Centro de la Mujer de Puerto Natales",
+    "Ejecutor": "Gobernación Provincial Última Esperanza",
+    "Cobertura_Territorial": "Puerto Natales",
+    "Dirección": "Ignacio Carrera Pinto 676, Puerto Natales",
+    "Teléfono": "61 – 241 0303",
+    "Email": "centrodelamujernatales@gmail.com"
+
+}]
+    }]
+}
