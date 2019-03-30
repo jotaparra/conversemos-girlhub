@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <!-- font awesome CSS -->
@@ -18,15 +22,12 @@
 
 <body>
     <!-- sección para pantalla inicial -->
-    <section id="index" class="background-body container-fluid">
+
+    <section id="index" class="background-body container-fluid text-blur-out">
+
         <div class="row row-index">
             <div class="col align-self-center">
                 <img src="./img/logotipo.jpeg" class="img-responsive" alt="logo conversemos">
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col text-center">
-                <button type="button" class="btn btn-primary" id="btn-access">Conversemos</button>
             </div>
         </div>
     </section>
@@ -108,38 +109,48 @@
     <!-- sección conversar con chatbot -->
     <section id="talking">
         <!--Navbar-->
-        <nav id="sectionNav" class="navbar navbar-expand-lg fixed-top navbar-light nav-gradient">
-            <div class="container">
-                <!-- para centrar el contenido del menú -->
-                <a href="#" class="navbar-brand">Menú</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#navbar' aria-controls="navbar"
-                    aria-expanded="false" aria-label="Menu de navegación">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Acerca de</a>
-                        </li>
-                    </ul>
+        <section class="fixedHeight">
+            <nav id="sectionNav" class="navbar navbar-expand-lg fixed-top navbar-light nav-gradient">
+                <div class="container">
+                    <!-- para centrar el contenido del menú -->
+                    <a href="#" class="navbar-brand">Menú</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#navbar'
+                        aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Acerca de</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!--/.Navbar-->
+
+        <section id="convSection">
+            <div id="conversation" class="container">
+                <div id="root" class="row">
                 </div>
             </div>
-        </nav>
-        <!--/.Navbar-->
+        </section>
+
         <!-- footer -->
         <footer class="footer fixed-bottom pink">
             <div class="container">
-                <form class="row align-items-center justify-content-center">
+                <form class="row align-items-center justify-content-center" autocomplete="off">
                     <div class="col-10">
-                        <input type="text" class="form-control my-3 input-message" id="" aria-describedby="text"
+                        <input type="text" class="form-control my-3 input-message" id="userMsg" aria-describedby="text"
                             placeholder="Escribe tu mensaje">
                     </div>
                     <div class="col-2">
-                        <button class="btn-message"><img src="./img/send-button.png" alt="botón para enviar mensaje"
-                                srcset=""></button>
+                        <button id="sendBtn" class="btn-message"><img src="./img/send-button.png"
+                                alt="botón para enviar mensaje" srcset=""></button>
                     </div>
                 </form>
             </div>
@@ -151,11 +162,14 @@
 
 
     <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!-- JavaScript -->
     <script src="./js/main.js"></script>
